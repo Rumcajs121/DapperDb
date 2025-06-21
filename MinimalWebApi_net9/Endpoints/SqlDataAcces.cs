@@ -2,7 +2,7 @@ using System.Data;
 using Dapper;
 using Microsoft.Data.SqlClient;
 
-namespace MinnimalWebApi_net9.Endpoints;
+namespace MinimalWebApi_net9.Endpoints;
 
     public class SqlDataAcces(IConfiguration config) : ISqlDataAcces
     {

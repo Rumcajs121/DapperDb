@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MinnimalWebApi_net9.Endpoints;
+using MinimalWebApi_net9.Endpoints;
 using Testcontainers.MsSql;
 
 namespace IntegrationTests;

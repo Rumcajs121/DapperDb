@@ -1,6 +1,6 @@
 using FluentValidation;
-using MinnimalWebApi_net9.Endpoints;
-using MinnimalWebApi_net9.Models;
+using MinimalWebApi_net9.Endpoints;
+using MinimalWebApi_net9.Models;
 using Scalar.AspNetCore;
 
 

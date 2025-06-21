@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace MinnimalWebApi_net9.Models;
+namespace MinimalWebApi_net9.Models;
 
 public class ToDoValidator:AbstractValidator<AssignmentDto>
 {

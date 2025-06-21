@@ -1,6 +1,6 @@
-using MinnimalWebApi_net9.Models;
+using MinimalWebApi_net9.Models;
 
-namespace MinnimalWebApi_net9.Endpoints;
+namespace MinimalWebApi_net9.Endpoints;
 
 public class ToDoListData : IToDoListData
 {

@@ -1,9 +1,9 @@
 ﻿name: UniversityProjectSemester6
 services:
   toDoApi:
-    image: minnimalwebapi_net9
+    image: minimalwebapi_net9
     build:
-      context: .
+      context: ./MinimalWebApi_net9
       dockerfile: Dockerfile
   toDoDb:
     image: mcr.microsoft.com/mssql/server

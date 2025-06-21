@@ -1,8 +1,8 @@
 ﻿using System.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.DependencyInjection;
-using MinnimalWebApi_net9.Endpoints;
-using MinnimalWebApi_net9.Models;
+using MinimalWebApi_net9.Endpoints;
+using MinimalWebApi_net9.Models;
 
 namespace IntegrationTests;
 

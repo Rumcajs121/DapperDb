@@ -21,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\MinnimalWebApi_net9\MinnimalWebApi_net9.csproj" />
+      <ProjectReference Include="..\..\MinimalWebApi_net9\MinimalWebApi_net9.csproj" />
     </ItemGroup>
 
 </Project>

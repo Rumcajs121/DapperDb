@@ -1,4 +1,4 @@
-namespace MinnimalWebApi_net9.Endpoints;
+namespace MinimalWebApi_net9.Endpoints;
 
 public interface ISqlDataAcces
 {

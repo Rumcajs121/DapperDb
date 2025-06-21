@@ -8,16 +8,16 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["MinnimalWebApi_net9.csproj", "./"]
-RUN dotnet restore "MinnimalWebApi_net9.csproj"
+RUN dotnet restore "MinimalWebApi_net9.csproj"
 COPY . .
 WORKDIR "/src/"
-RUN dotnet build "./MinnimalWebApi_net9.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "./MinimalWebApi_net9.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./MinnimalWebApi_net9.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./MinimalWebApi_net9.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "MinnimalWebApi_net9.dll"]
+ENTRYPOINT ["dotnet", "MinimalWebApi_net9.dll"]

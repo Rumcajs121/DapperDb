@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinnimalWebApi_net9", "MinnimalWebApi_net9\MinnimalWebApi_net9.csproj", "{6B61D78A-1518-40CE-8FD4-56D52A946DCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalWebApi_net9", "MinimalWebApi_net9\MinimalWebApi_net9.csproj", "{6B61D78A-1518-40CE-8FD4-56D52A946DCA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MinnimalWebApi_net9.Tests", "MinnimalWebApi_net9.Tests", "{B29D8365-3FDE-2F8C-B8D5-678845EFD2AD}"
 EndProject

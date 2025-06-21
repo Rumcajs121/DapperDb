@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace MinnimalWebApi_net9;
+namespace MinimalWebApi_net9;
 
 public static class ValidationExtensions
 {
