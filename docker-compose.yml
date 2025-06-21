@@ -1,0 +1,13 @@
+﻿name: UniversityProjectSemester6
+services:
+  toDoApi:
+    image: minnimalwebapi_net9
+    build:
+      context: .
+      dockerfile: Dockerfile
+  toDoDb:
+    image: mcr.microsoft.com/mssql/server
+volumes:
+  minnimawebapi_mssql_order:
+    external: true
+    

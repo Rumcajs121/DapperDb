@@ -1,0 +1,25 @@
+services:
+  toDoDb:
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=1qazXSW@
+    restart: always
+    ports:
+      - "1433:1433"
+    volumes:
+      - minnimawebapi_mssql_order:/var/opt/mssql
+  toDoApi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_HTTPS_PORTS=8081
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=1qazXSW@
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/devcert.pfx
+      - ConnectionStrings__Database=Server=toDoDb;Database=dapperDb;User Id=sa;Password=1qazXSW@;Encrypt=False;TrustServerCertificate=True
+    depends_on:
+      - toDoDb
+    ports:
+      - "6000:8080"
+      - "6060:8081"
+    volumes:
+      - ./devcert.pfx:/https/devcert.pfx
